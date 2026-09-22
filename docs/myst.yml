@@ -11,6 +11,7 @@ project:
     jhe: https://jupyterhealth.github.io/software-documentation/
   toc:
     - file: index.md
+    - file: sign-up.md
     - file: log-in.md
     - file: run-an-analysis.md
 site:

@@ -1,5 +1,10 @@
 # Log in and launch a session
 
+:::{important} You'll need an Exchange account
+The Hub logs you in through the JupyterHealth Exchange, so you need an Exchange account first.
+See [Sign up for the Exchange](sign-up.md).
+:::
+
 ## Log in
 
 1. Go to <https://jupyter-health.2i2c.cloud> and click {guilabel}`Log in to continue`.
@@ -21,7 +26,7 @@
 
 % We need a more user-friendly documentation of organizations in JHE!
 Access is granted by membership in a [JupyterHealth Exchange organization](xref:jhe/jhe/access-control#organization-hierarchy-and-authority).
-If you don't have an account, use {guilabel}`Sign Up` on the Exchange log in form, then ask your study or organization administrator to add you to their organization.
+If you don't have an account, [sign up for the Exchange](sign-up.md), then ask your study or organization administrator to add you to their organization.
 
 :::{note}
 % We need a more user-friendly documentation of organizations in JHE!
