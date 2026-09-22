@@ -1,5 +1,10 @@
 # Log in and launch a session
 
+:::{important} You'll need an Exchange account
+The Hub logs you in through the JupyterHealth Exchange, so you need an Exchange account first.
+See [Sign up for the Exchange](sign-up.md).
+:::
+
 ## Log in
 
 1. Go to <https://jupyter-health.2i2c.cloud> and click {guilabel}`Log in to continue`.
