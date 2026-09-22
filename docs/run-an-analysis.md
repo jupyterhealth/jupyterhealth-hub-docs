@@ -39,7 +39,7 @@ List the studies you can see, then the patients in one of them:
 for study in client.list_studies():
     print(study["id"], study["name"])
 
-study_id = 30011  # pick one from above
+study_id = 30006  # pick one from above
 
 for patient in client.list_patients(study_id=study_id):
     print(patient["id"], patient["nameFamily"], patient["nameGiven"])
@@ -54,7 +54,7 @@ Check with `client.get_patient_consents(patient_id)`.
 from jupyterhealth_client import Code
 
 df = client.list_observations_df(
-    patient_id=40072,  # pick one from above
+    patient_id=40006,  # pick one from above
     study_id=study_id,
     code=Code.BLOOD_GLUCOSE,
     limit=10_000,
