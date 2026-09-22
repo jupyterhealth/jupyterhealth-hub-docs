@@ -5,6 +5,11 @@ It is part of the [JupyterHealth](xref:jh) project and is operated by [2i2c](htt
 
 ::::{grid} 1 1 2 2
 
+:::{card} Sign up for the Exchange
+:link: sign-up.md
+Create the Exchange account that logs you into the Hub.
+:::
+
 :::{card} Log in and launch a session
 :link: log-in.md
 Get onto the Hub and start JupyterLab to access the JupyterHealth Exchange.
