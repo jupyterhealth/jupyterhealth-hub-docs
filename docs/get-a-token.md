@@ -1,6 +1,6 @@
 # Get your own Exchange token
 
-The Hub sets `JHE_TOKEN` for you, so you only need this to use the [client library](xref:jh/glossary#term-client-library) somewhere else, like your own laptop.
+When you use the Hub, `JHE_TOKEN` is set for you. If you're using the [client library](xref:jh/glossary#term-client-library) from another computational environment, you'll need to generate a token and set `JHE_TOKEN` yourself.
 
 1. [Log in to the Exchange](sign-up.md) in your browser and open {guilabel}`Data Portal`.
 
@@ -18,14 +18,10 @@ The Hub sets `JHE_TOKEN` for you, so you only need this to use the [client libra
    :width: 400px
    ```
 
-4. Set them as **environment variables** called `JHE_TOKEN` and `JHE_URL`, before creating a client:
+4. Copy your token and Exchange URL. In your notebook, set them before creating a client:
 
-   ```bash
-   export JHE_URL=https://<your-exchange-url>
-   export JHE_TOKEN=<your-token>
-   ```
+   
 
-When you create a new Exchange Client, it should use these tokens from the environment variables to connect.
 
 Tokens are time-limited, so create a new one when it expires.
 
