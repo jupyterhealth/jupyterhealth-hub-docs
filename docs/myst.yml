@@ -14,6 +14,7 @@ project:
     - file: sign-up.md
     - file: log-in.md
     - file: run-an-analysis.md
+    - file: get-a-token.md
 site:
   options:
     logo_text: Hub

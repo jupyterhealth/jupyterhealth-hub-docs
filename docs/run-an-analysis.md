@@ -30,6 +30,8 @@ client = JupyterHealthClient()
 Tokens expire after a day.
 If requests start failing, log out, log back in, and restart your server.
 
+To use the client outside the Hub, [get your own token](get-a-token.md).
+
 ## Find a study and a patient
 
 Data is organized by organization, study, and patient.
