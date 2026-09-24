@@ -1,6 +1,6 @@
 # Explore your data
 
-This walks through pulling data from the JupyterHealth Exchange into a notebook.
+Starting with a blank notebook, this page walks you through connecting to the JupyterHealth Exchange and viewing the data you can access.
 It assumes you have [logged in and launched a session](log-in.md).
 
 ## Connect to the Exchange
@@ -19,7 +19,8 @@ Your Hub session provides two environment variables so the client can reach the 
 ```
 
 The [client library](https://jupyterhealth-client.readthedocs.io) reads these automatically.
-Open a new notebook with {gui}`File --> New --> Notebook` and run:
+
+Open a new notebook with {gui}`File --> New --> Notebook` and run the following code blocks in order:
 
 ```python
 from jupyterhealth_client import JupyterHealthClient
