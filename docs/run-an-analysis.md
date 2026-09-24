@@ -51,10 +51,10 @@ for study in client.list_studies():
     print(f"  - [Study ID: {study['id']}] {study['name']} (org: {study['organization']['name']})")
 ```
 
-Choose an ID from the list above to see more about that study:
+Choose an ID from the list above and replace `<STUDY_ID>` before running this cell:
 
 ```python
-study_id = 30006  # replace with an ID from your list
+study_id = <STUDY_ID> 
 
 client.get_study(study_id)
 ```
@@ -69,12 +69,12 @@ for patient in client.list_patients(study_id=study_id):
 
 ## View patient data
 
-Choose a patient ID from the list above. This example retrieves blood glucose observations:
+Choose a patient ID from the list above and replace `<PATIENT_ID>` before running this cell. This example retrieves blood glucose observations:
 
 ```python
 from jupyterhealth_client import Code
 
-patient_id = 40006  # replace with a patient ID from your list
+patient_id = <PATIENT_ID>
 
 df = client.list_observations_df(
     patient_id=patient_id,
