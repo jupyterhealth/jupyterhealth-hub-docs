@@ -1,11 +1,11 @@
-# Run a simple analysis
+# Explore your data
 
-This walks through pulling data from the JupyterHealth Exchange into a notebook.
+Starting with a blank notebook, this page walks you through connecting to the JupyterHealth Exchange and viewing the data you can access.
 It assumes you have [logged in and launched a session](log-in.md).
 
 ## Connect to the Exchange
 
-Your server starts with two environment variables so the client can reach the Exchange as you, without logging in again:
+Your Hub session provides two environment variables so the client can reach the Exchange using your account, without asking you to log in again:
 
 ```{list-table}
 :header-rows: 1
@@ -19,7 +19,8 @@ Your server starts with two environment variables so the client can reach the Ex
 ```
 
 The [client library](https://jupyterhealth-client.readthedocs.io) reads these automatically.
-Open a new notebook with {gui}`File --> New --> Notebook` and run:
+
+Open a new notebook with {gui}`File --> New --> Notebook` and run the following code blocks in order:
 
 ```python
 from jupyterhealth_client import JupyterHealthClient
@@ -32,37 +33,60 @@ If requests start failing, log out, log back in, and restart your server.
 
 To use the client outside the Hub, [get your own token](get-a-token.md).
 
-## Find a study and a patient
+## Check your connection
 
-Data is organized by organization, study, and patient.
-List the studies you can see, then the patients in one of them:
+Run this to see your user information:
 
 ```python
-for study in client.list_studies():
-    print(study["id"], study["name"])
-
-study_id = 30006  # pick one from above
-
-for patient in client.list_patients(study_id=study_id):
-    print(patient["id"], patient["nameFamily"], patient["nameGiven"])
+client.get_user()
 ```
 
-Only patients who have consented to share data with the study will have data available.
-Check with `client.get_patient_consents(patient_id)`.
+## List studies and patients
 
-## Load observations into a DataFrame
+Data is organized by organization, study, and patient.
+List the studies you can access. You'll use one of these IDs in the next step:
+
+```python
+print("All my studies:")
+for study in client.list_studies():
+    print(f"  - [Study ID: {study['id']}] {study['name']} (org: {study['organization']['name']})")
+```
+
+Choose an ID from the list above and replace `<STUDY_ID>` before running this cell:
+
+```python
+study_id = <STUDY_ID>
+
+client.get_study(study_id)
+```
+
+List the patients in that study:
+
+```python
+print("Patients in this study:")
+for patient in client.list_patients(study_id=study_id):
+    print(f"  - [Patient ID: {patient['id']}] {patient['nameGiven']} {patient['nameFamily']}")
+```
+
+## View patient data
+
+Choose a patient ID from the list above and replace `<PATIENT_ID>` before running this cell. This example retrieves blood glucose observations:
 
 ```python
 from jupyterhealth_client import Code
 
+patient_id = <PATIENT_ID>
+
 df = client.list_observations_df(
-    patient_id=40006,  # pick one from above
+    patient_id=patient_id,
     study_id=study_id,
-    code=Code.BLOOD_GLUCOSE,
-    limit=10_000,
+    code=Code.BLOOD_GLUCOSE
 )
 df.head()
 ```
 
-For a full worked example, including glucose metrics and plots, run the [CGM tutorial](https://jupyterhealth.github.io/software-documentation/tutorial/tutorial-cgm).
+If the DataFrame is empty, this patient may not have blood glucose data available for this study. Check their consent with `client.get_patient_consents(patient_id=patient_id)`, or try another patient or data code.
+
+For an example of glucose metrics and plots, see the [CGM tutorial](https://jupyterhealth.github.io/software-documentation/tutorial/tutorial-cgm).
+The study and patient IDs in that tutorial are illustrative, so its code won’t run as written. Replace them with IDs from your own study.
 The [client API reference](https://jupyterhealth-client.readthedocs.io) lists the other data codes and methods.

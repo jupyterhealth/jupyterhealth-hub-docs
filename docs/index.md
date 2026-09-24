@@ -15,9 +15,9 @@ Create the Exchange account that logs you into the Hub.
 Get onto the Hub and start JupyterLab to access the JupyterHealth Exchange.
 :::
 
-:::{card} Run a simple analysis
+:::{card} Explore your data
 :link: run-an-analysis.md
-Pull data from the Exchange into a notebook for visualization.
+Connect to the Exchange and view studies, patients, and observations in a notebook.
 :::
 
 :::{card} JupyterHealth ecosystem
