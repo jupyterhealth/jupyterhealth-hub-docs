@@ -86,5 +86,6 @@ df.head()
 
 If the DataFrame is empty, this patient may not have blood glucose data available for this study. Check their consent with `client.get_patient_consents(patient_id=patient_id)`, or try another patient or data code.
 
-For a full worked example, including glucose metrics and plots, run the [CGM tutorial](https://jupyterhealth.github.io/software-documentation/tutorial/tutorial-cgm).
+For an example of glucose metrics and plots, see the [CGM tutorial](https://jupyterhealth.github.io/software-documentation/tutorial/tutorial-cgm).
+The study and patient IDs in that tutorial are illustrative, so its code won’t run as written. Replace them with IDs from your own study.
 The [client API reference](https://jupyterhealth-client.readthedocs.io) lists the other data codes and methods.
