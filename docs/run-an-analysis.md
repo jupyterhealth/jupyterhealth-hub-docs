@@ -54,7 +54,7 @@ for study in client.list_studies():
 Choose an ID from the list above and replace `<STUDY_ID>` before running this cell:
 
 ```python
-study_id = <STUDY_ID> 
+study_id = <STUDY_ID>
 
 client.get_study(study_id)
 ```
