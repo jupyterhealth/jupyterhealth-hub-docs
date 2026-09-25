@@ -20,8 +20,13 @@ When you use the Hub, `JHE_TOKEN` is set for you. If you're using the [client li
 
 4. Copy your token and Exchange URL. In your notebook, set them before creating a client:
 
+   ```python
+   from jupyterhealth_client import JupyterHealthClient
    
-
+   JHE_URL = "https://<your-exchange-url>"
+   JHE_TOKEN = "<your-token>"
+   client = JupyterHealthClient(JHE_URL, token=JHE_TOKEN)
+   ```
 
 Tokens are time-limited, so create a new one when it expires.
 
