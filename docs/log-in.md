@@ -15,7 +15,7 @@ See [Sign up for the Exchange](sign-up.md).
    ```
 
 2. You are sent to the JupyterHealth Exchange.
-   Enter the email address and password of your [Exchange](xref:jh/glossary#term-exchange) account and click {guilabel}`Log In`.
+   Enter the email address and password of your [Exchange](https://docs.jupyterhealth.org/glossary/#term-exchange) account and click {guilabel}`Log In`.
 
    ```{figure} images/exchange-login.png
    :alt: The JupyterHealth Exchange log in form
@@ -41,7 +41,7 @@ It might take a minute or two!
 
 ## User environment
 
-The server runs the [JupyterHealth environment image](https://github.com/jupyterhealth/singleuser-image), which has Python, the [client library](xref:jh/glossary#term-client-library), Jupyter AI, and common data science libraries pre-installed.
+The server runs the [JupyterHealth environment image](https://github.com/jupyterhealth/singleuser-image), which has Python, the [client library](https://docs.jupyterhealth.org/glossary/#term-client-library), Jupyter AI, and common data science libraries pre-installed.
 
 **Packages you install with `pip` will not persist across sessions!** If you must `pip install`, put `%pip install ...` at the top of notebooks that need extra packages.
 

@@ -1,6 +1,6 @@
 # JupyterHealth Hub
 
-The JupyterHealth Hub is a cloud-hosted JupyterLab environment for working with health data from the [JupyterHealth Exchange](xref:jh/glossary#term-exchange).
+The JupyterHealth Hub is a cloud-hosted JupyterLab environment for working with health data from the [JupyterHealth Exchange](https://docs.jupyterhealth.org/glossary/#term-exchange).
 It is part of the [JupyterHealth](xref:jh) project and is operated by [2i2c](https://2i2c.org).
 
 ::::{grid} 1 1 2 2

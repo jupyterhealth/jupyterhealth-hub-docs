@@ -1,6 +1,6 @@
 # Sign up for the Exchange
 
-The Hub uses the [JupyterHealth Exchange](xref:jh/glossary#term-exchange) for authentication.
+The Hub uses the [JupyterHealth Exchange](https://docs.jupyterhealth.org/glossary/#term-exchange) for authentication.
 Once you have an Exchange account, logging into the Exchange logs you into the Hub too.
 You only need to do this once.
 
