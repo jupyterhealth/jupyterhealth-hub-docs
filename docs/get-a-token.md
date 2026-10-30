@@ -1,6 +1,6 @@
 # Get your own Exchange token
 
-When you use the Hub, `JHE_TOKEN` is set for you. If you're using the [client library](xref:jh/glossary#term-client-library) from another computational environment, you'll need to generate a token and set `JHE_TOKEN` yourself.
+When you use the Hub, `JHE_TOKEN` is set for you. If you're using the [client library](https://docs.jupyterhealth.org/glossary/#term-client-library) from another computational environment, you'll need to generate a token and set `JHE_TOKEN` yourself.
 
 1. [Log in to the Exchange](sign-up.md) in your browser and open {guilabel}`Data Portal`.
 

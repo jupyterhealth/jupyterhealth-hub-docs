@@ -1,13 +1,13 @@
 # Sign up for the Exchange
 
-The Hub uses the [JupyterHealth Exchange](xref:jh/glossary#term-exchange) for authentication.
+The Hub uses the [JupyterHealth Exchange](https://docs.jupyterhealth.org/glossary/#term-exchange) for authentication.
 Once you have an Exchange account, logging into the Exchange logs you into the Hub too.
 You only need to do this once.
 
 ## Get an invite code
 
 Signing up requires an invite code.
-Ask for one in the `#jupyterhealth` channel on [Zulip](xref:jh/glossary#term-zulip).
+Ask for one in the `#jupyterhealth` channel on [Zulip](https://jupyter.zulipchat.com/#narrow/channel/531270-jupyterhealth).
 
 ## Create your account
 
