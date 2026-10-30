@@ -7,7 +7,7 @@ You only need to do this once.
 ## Get an invite code
 
 Signing up requires an invite code.
-Ask for one in the `#jupyterhealth` channel on [Zulip](xref:jh/glossary#term-zulip).
+Ask for one in the `#jupyterhealth` channel on [Zulip](https://jupyter.zulipchat.com/#narrow/channel/531270-jupyterhealth).
 
 ## Create your account
 

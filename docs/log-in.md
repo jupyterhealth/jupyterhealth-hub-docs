@@ -59,4 +59,4 @@ If you leave your Hub session idle for long enough, it will be shut down automat
 ## Get help
 
 - Problems with the Hub itself (login loops, server won't start): use the [2i2c support process](xref:2i2c#support).
-- Questions about JupyterHealth data or the Exchange: ask in [Zulip](xref:jh/glossary#term-zulip).
+- Questions about JupyterHealth data or the Exchange: ask in [Zulip](https://jupyter.zulipchat.com/#narrow/channel/531270-jupyterhealth).

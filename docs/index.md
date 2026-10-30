@@ -21,7 +21,7 @@ Connect to the Exchange and view studies, patients, and observations in a notebo
 :::
 
 :::{card} JupyterHealth ecosystem
-:link: xref:jh/ecosystem
+:link: xref:jh/components
 The Exchange, the client library, and other project docs.
 :::
 
